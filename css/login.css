@@ -1,5 +1,17 @@
 body {
-    background-image: url("../components/img/bg/background_dark.jpg");
+    box-sizing: border-box;
+}
+
+body::after {
+    background-image: url("../components/img/bg/background_light.jpg");
+    filter: blur(1px) brightness(50%);
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 form label {
