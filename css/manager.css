@@ -1,0 +1,155 @@
+/* resets */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* global */
+
+body {
+    margin: 0;
+}
+
+
+/* Style for "Header" */
+
+.header {
+    width: 100%;
+    height: 5%;
+    background-color: #639E93;
+    background-image: linear-gradient(to top, rgba(40, 133, 117, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+}
+
+
+/* Style for "Main" */
+
+.main {
+    background-image: url("../components/img/bg/background_light.jpg");
+    height: 90%;
+    width: 100%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 100%;
+}
+
+
+/* grid */
+
+.row {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header_row {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+}
+
+.col-3-3 {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    color: #ffffff;
+}
+
+button {
+    margin: 0;
+}
+
+
+/* Style for "Picture section" */
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Style for "Footer" */
+
+.footer {
+    width: 100%;
+    height: 5%;
+    background-color: #639E93;
+    background-image: linear-gradient(to top, rgba(40, 133, 117, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+    text-align: center;
+    display: table;
+}
+
+
+/* Style for "Copyright" text */
+
+span {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: normal;
+    /*margin: 0 auto;*/
+    height: 80%;
+    color: #ffffff;
+    font-family: "PT Sans";
+    /*font-size: 15px;*/
+    font-weight: 400;
+}
+
+a:link {
+    color: #ffffff;
+    ;
+}
+
+
+/* Text style for "Demo Shop" */
+
+@media all and ( min-width: 480px) {
+    .row {
+        width: 33.33%;
+    }
+    .col-1-2 {
+        float: left;
+        width: 100%;
+        height: 30%;
+    }
+    .header_row {
+        width: 33.33%;
+    }
+}
+
+@media all and ( min-width: 800px) {
+    .row {
+        width: 80%;
+    }
+    .col-1-2 {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    .image {
+        height: 30%;
+    }
+    .header_row {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 479px) {
+    [class*="col-"] {
+        display: none;
+    }
+}
