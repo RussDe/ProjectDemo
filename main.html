@@ -12,6 +12,8 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -47,10 +49,42 @@
                     <input class="input_text" maxlength=45 type="text" id="filter" name="filter" placeholder="Filter by text ...">
                     <!--<img id="input_img" src="components/img/forms/search.jpg">-->
                     </input>
+                    <!--Filter body-->
+                    <div class="filter_body">
+                        <div class="filter_avalability">
+                            Availability:
+                            <!-- Rounded switch -->
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch"></label>
+                            </div>
+                            <div class="available">
+                                Available only
+                            </div>
+
+                        </div>
+                        <div class="filter_gender">
+                            Gender:
+                            <form>
+                                <input type="radio" name="gender" id="male" value="male" checked> <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+                                <input type="radio" name="gender" id="unisex" value="unisex"> <label for="unisex">Unisex</label>
+                            </form>
+                        </div>
+                        <div class="filter_categoty">
+                            Category:
+                        </div>
+                        <div class="divider">
+                            <hr>
+                        </div>
+                        <div class="filter_raiting">
+                            Raiting:
+                        </div>
+                        <div class="filter_price">
+                            Price:
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!--Filter body-->
-            <div style="display: none">
             </div>
         </div>
         <!--Filter -->
